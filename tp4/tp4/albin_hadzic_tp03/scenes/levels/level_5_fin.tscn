@@ -512,7 +512,7 @@ position = Vector2(1383, 67)
 position = Vector2(1607, 212)
 
 [node name="collectible8" parent="collectible" instance=ExtResource("12_2fs5b")]
-position = Vector2(1796, 356)
+position = Vector2(1187, 164)
 
 [node name="collectible9" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(1933, 306)
@@ -520,7 +520,7 @@ position = Vector2(1933, 306)
 [node name="ennemis" type="Node" parent="."]
 
 [node name="key" parent="." instance=ExtResource("13_h8ejh")]
-position = Vector2(1155, 96)
+position = Vector2(1754, 315)
 
 [node name="portail_finale" parent="." instance=ExtResource("14_tufrv")]
 position = Vector2(2199, 186)
