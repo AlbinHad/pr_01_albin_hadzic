@@ -367,7 +367,7 @@ script = ExtResource("7_2jccw")
 
 [node name="Sprite2D" type="Sprite2D" parent="portail"]
 
-[node name="gamemanager" type="Node" parent="."]
+[node name="gamemanager" type="Node" parent="." groups=["player"]]
 unique_name_in_owner = true
 script = ExtResource("8_1buau")
 

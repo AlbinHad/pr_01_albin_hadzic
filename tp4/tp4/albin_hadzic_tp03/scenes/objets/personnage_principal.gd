@@ -39,8 +39,6 @@ func _physics_process(delta: float) -> void:
 	var isLeft = velocity.x<0
 	sprite_2d.flip_h = isLeft
 
-func _ready():
-	connect("body_entered", Callable(self, "_on_body_entered"))
 
 func _on_body_entered(body):
 	if body.name == "CharacterBody2D": # nom de ton joueur
