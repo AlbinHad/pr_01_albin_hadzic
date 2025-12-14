@@ -550,6 +550,9 @@ position = Vector2(1326, 866)
 [node name="enemi3" parent="." instance=ExtResource("13_0wqsv")]
 position = Vector2(1782, 332)
 
+[node name="enemi4" parent="." instance=ExtResource("13_0wqsv")]
+position = Vector2(735, 670)
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/resume" to="ui/pause" method="_on_resume_pressed"]
 [connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/menu" to="ui/pause" method="_on_menu_pressed"]
