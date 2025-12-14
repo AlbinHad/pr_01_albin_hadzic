@@ -2,15 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://ctihthkb7r8y7" path="res://assets/images/Yellow.png" id="1_56dhn"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_ax3dk"]
-[ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/personnage_principal.tscn" id="3_q2dsb"]
+[ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_q2dsb"]
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_p3r0x"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://area_2d.gd" id="5_5xqnf"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_5xqnf"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_una4e"]
-[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://portail.gd" id="7_ema3p"]
-[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://game_manager.gd" id="8_8uepa"]
-[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/fin.tscn" id="9_q7pjq"]
-[ext_resource type="PackedScene" uid="uid://c60dwfrgdhjop" path="res://scenes/level_4.tscn" id="10_56dhn"]
-[ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/collectible.tscn" id="11_sx8yt"]
+[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_ema3p"]
+[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/objets/game_manager.gd" id="8_8uepa"]
+[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_q7pjq"]
+[ext_resource type="PackedScene" uid="uid://c60dwfrgdhjop" path="res://scenes/levels/level_4.tscn" id="10_56dhn"]
+[ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="11_sx8yt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
 texture = ExtResource("2_ax3dk")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ba1mvt7s62icg"]
 
 [ext_resource type="Texture2D" uid="uid://dbyypnebttco2" path="res://assets/images/End (Idle).png" id="1_5royu"]
-[ext_resource type="Script" uid="uid://fcq7hvct2bqp" path="res://scenes/fin.gd" id="1_70gu0"]
+[ext_resource type="Script" uid="uid://fcq7hvct2bqp" path="res://scenes/objets/fin.gd" id="1_70gu0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_70gu0"]
 size = Vector2(75, 75)

@@ -1,19 +1,19 @@
 [gd_scene load_steps=14 format=4 uid="uid://c60dwfrgdhjop"]
 
-[ext_resource type="Texture2D" uid="uid://bdnvtleylbxyc" path="res://assets/images/Blue.png" id="1_cp0rv"]
-[ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_7ewpb"]
-[ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/personnage_principal.tscn" id="3_py6g0"]
-[ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_g31h8"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://area_2d.gd" id="5_hy5x3"]
-[ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_dmmei"]
-[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://portail.gd" id="7_bee8o"]
-[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://game_manager.gd" id="8_y88yj"]
-[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/fin.tscn" id="9_675ay"]
-[ext_resource type="PackedScene" uid="uid://dj8qke8xhrwo" path="res://scenes/main_menu.tscn" id="10_q41qf"]
-[ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/collectible.tscn" id="11_rr1tt"]
+[ext_resource type="Texture2D" uid="uid://bdnvtleylbxyc" path="res://assets/images/Blue.png" id="1_4wsov"]
+[ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_qvnao"]
+[ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_hsvsk"]
+[ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_fcb7b"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_ov8fk"]
+[ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_pmra4"]
+[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_1bx01"]
+[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/objets/game_manager.gd" id="8_vq5n0"]
+[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_xt2o7"]
+[ext_resource type="PackedScene" uid="uid://dp7ga2516absi" path="res://scenes/levels/level_5_fin.tscn" id="10_beuva"]
+[ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="11_05se8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
-texture = ExtResource("2_7ewpb")
+texture = ExtResource("2_qvnao")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -287,7 +287,7 @@ offset_left = -3.0
 offset_top = -38.0
 offset_right = 2540.0
 offset_bottom = 667.0
-texture = ExtResource("1_cp0rv")
+texture = ExtResource("1_4wsov")
 stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -296,11 +296,11 @@ scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAbAP//AAANAAQAAAAcAP//AAANAAQAAAAdAP//AAANAAQAAAAeAP//AAANAAQAAAAfAP//AAANAAQAAAAgAP//AAANAAQAAAAhAP//AAANAAQAAAAiAP//AAANAAQAAAAjAP//AAANAAQAAAAkAP//AAANAAQAAAAlAP//AAANAAQAAAAmAP//AAANAAQAAAAnAP//AAANAAQAAAAoAP//AAANAAQAAAApAP//AAANAAQAAAAqAP//AAANAAQAAAAsAP//AAANAAQAAAAtAP//AAANAAQAAAAuAP//AAANAAQAAAAvAP//AAANAAQAAAArAP//AAANAAQAAAA0AP//AAAMAAUAAAAwAP//AAANAAQAAAAxAP//AAANAAQAAAAyAP//AAANAAQAAAAzAP//AAANAAQAAAAAAP//AAANAAQAAAABAP//AAANAAQAAAACAP//AAANAAQAAAADAP//AAANAAQAAAAEAP//AAANAAQAAAAFAP//AAANAAQAAAAGAP//AAANAAQAAAAHAP//AAANAAQAAAAIAP//AAANAAQAAAAJAP//AAANAAQAAAAKAP//AAANAAQAAAALAP//AAANAAQAAAAMAP//AAANAAQAAAANAP//AAANAAQAAAAOAP//AAANAAQAAAAPAP//AAANAAQAAAAQAP//AAANAAQAAAARAP//AAANAAQAAAASAP//AAANAAQAAAATAP//AAANAAQAAAAUAP//AAANAAQAAAAVAP//AAANAAQAAAAWAP//AAANAAQAAAAXAP//AAANAAQAAAAYAP//AAANAAQAAAAZAP//AAANAAQAAAAaAP//AAANAAQAAAD//wAAAAAPAAUAAAD//wEAAAAPAAUAAAD//wIAAAAPAAUAAAD//wMAAAAPAAUAAAD//wQAAAAPAAUAAAD//wUAAAAPAAUAAAD//wYAAAAPAAUAAAD//wcAAAAPAAUAAAD//wgAAAAPAAUAAAD//wkAAAAPAAUAAAD//woAAAAPAAUAAAD//wsAAAAPAAUAAAD//wwAAAAPAAUAAAD//w0AAAABAAgAAAD/////AAAMAAUAAAA0AAAAAAAPAAUAAAA0AAEAAAAPAAUAAAA0AAIAAAAPAAUAAAA0AAMAAAAPAAUAAAA0AAQAAAAPAAUAAAA0AAUAAAAPAAUAAAA0AAYAAAAPAAUAAAA0AAcAAAAPAAUAAAA0AAgAAAAPAAUAAAA0AAkAAAAPAAUAAAA0AAoAAAAPAAUAAAA0AAsAAAAPAAUAAAA0AAwAAAAPAAUAAAAAAA0AAAABAAgAAAABAA0AAAABAAgAAAACAA0AAAABAAgAAAADAA0AAAABAAgAAAAEAA0AAAABAAgAAAAEAAsAAAAGAAAAAAAGAAoAAAAHAAAAAAAIAAgAAAAGAAAAAAAIAAkAAAAMAAUAAAAGAAsAAAAKAAEAAAAJAAgAAAAMAAQAAAAFAA0AAAABAAgAAAAGAA0AAAABAAgAAAAHAA0AAAABAAgAAAAIAA0AAAABAAgAAAAJAA0AAAABAAgAAAAKAA0AAAABAAgAAAALAA0AAAABAAgAAAAMAA0AAAABAAgAAAANAA0AAAABAAgAAAAOAA0AAAABAAgAAAAPAA0AAAABAAgAAAAQAA0AAAABAAgAAAARAA0AAAABAAgAAAASAA0AAAABAAgAAAATAA0AAAABAAgAAAAUAA0AAAABAAgAAAAVAA0AAAABAAgAAAAWAA0AAAABAAgAAAAXAA0AAAABAAgAAAAYAA0AAAABAAgAAAAZAA0AAAABAAgAAAAaAA0AAAABAAgAAAAbAA0AAAABAAgAAAAcAA0AAAABAAgAAAAdAA0AAAABAAgAAAAeAA0AAAABAAgAAAAfAA0AAAABAAgAAAAgAA0AAAABAAgAAAAhAA0AAAABAAgAAAAiAA0AAAABAAgAAAAjAA0AAAABAAgAAAAkAA0AAAABAAgAAAAlAA0AAAABAAgAAAAmAA0AAAABAAgAAAAnAA0AAAABAAgAAAAoAA0AAAABAAgAAAApAA0AAAABAAgAAAAqAA0AAAABAAgAAAArAA0AAAABAAgAAAAsAA0AAAABAAgAAAAtAA0AAAABAAgAAAAuAA0AAAABAAgAAAAvAA0AAAABAAgAAAAwAA0AAAABAAgAAAAxAA0AAAABAAgAAAAyAA0AAAABAAgAAAAzAA0AAAABAAgAAAA0AA0AAAABAAgAAAAJAAkAAAAIAAIAAAACAAYAAAAGAAAAAAADAAYAAAAHAAAAAAAEAAYAAAAIAAAAAAAHAAMAAAASAAIAAAAIAAMAAAASAAIAAAAJAAMAAAASAAIAAAAMAAQAAAAMAAUAAAASAAEAAAASAAIAAAASAAUAAAASAAIAAAATAAUAAAASAAIAAAAKAAcAAAAPAAQAAAAKAAgAAAAMAAUAAAATAAEAAAASAAIAAAAWAAgAAAAGAAAAAAAXAAgAAAAIAAAAAAASAAYAAAAHAAAAAAAOAAYAAAAMAAUAAAAOAAgAAAAPAAQAAAASAAgAAAAPAAQAAAASAAkAAAAPAAYAAAAOAAkAAAAPAAYAAAAFAAsAAAAHAAAAAAAUAAwAAAAMAAUAAAAVAAsAAAAIAAAAAAAVAAwAAAAOAAQAAAAYAAgAAAASAAIAAAAZAAgAAAAGAAAAAAAWAAkAAAAGAAIAAAAXAAkAAAAIAAIAAAALAAMAAAASAAIAAAALAAcAAAARAAIAAAAMAAUAAAARAAIAAAAOAAUAAAARAAIAAAANAAUAAAAMAAUAAAANAAYAAAASAAIAAAAOAAcAAAASAAIAAAAaAAgAAAAIAAAAAAAaAAkAAAAIAAIAAAAZAAkAAAAGAAIAAAAbAAYAAAAMAAUAAAAbAAUAAAAGAAAAAAAcAAYAAAAPAAYAAAAcAAUAAAAPAAQAAAAcAAQAAAAGAAAAAAAcAAcAAAASAAIAAAAbAAcAAAASAAIAAAAdAAQAAAASAAIAAAAfAAUAAAASAAIAAAAgAAUAAAASAAIAAAAiAAcAAAASAAIAAAAjAAcAAAASAAIAAAAyAAwAAAAPAAEAAAAyAAsAAAAPAAEAAAAyAAoAAAAPAAEAAAAyAAkAAAAPAAEAAAAyAAgAAAAPAAEAAAAyAAcAAAAPAAEAAAAyAAYAAAAPAAEAAAAyAAUAAAAHAAAAAAAyAAQAAAAHAAAAAAAxAAUAAAAHAAAAAAAzAAUAAAAIAAAAAAAxAAYAAAAHAAAAAAAwAAYAAAAGAAAAAAAzAAcAAAATAAEAAAAxAAkAAAASAAEAAAAwAAkAAAAHAAAAAAAvAAkAAAAGAAAAAAAxAAwAAAASAAEAAAAvAAsAAAAHAAAAAAAuAAsAAAAGAAAAAAAwAAsAAAAHAAAAAAAzAAoAAAASAAEAAAAwAAwAAAASAAEAAAAxAAgAAAAHAAAAAAAxAAsAAAAHAAAAAAAvAAwAAAASAAEAAAAuAAwAAAARAAEAAAAwAAgAAAAGAAAAAAAzAAYAAAAIAAAAAAAzAAgAAAAHAAAAAAAzAAsAAAAHAAAAAAAlAAIAAAANAAQAAAAkAAIAAAAMAAQAAAAkAAMAAAAIAAAAAAAjAAMAAAAHAAAAAAAjAAQAAAAMAAUAAAAmAAIAAAAOAAQAAAAmAAMAAAAPAAYAAAAnAAMAAAAMAAUAAAAnAAQAAAAPAAUAAAAnAAUAAAAPAAUAAAAnAAYAAAAIAAAAAAAmAAoAAAAMAAUAAAAkAAoAAAAGAAAAAAAlAAoAAAAMAAQAAAAnAAcAAAAMAAUAAAAnAAgAAAAPAAUAAAAmAAkAAAAMAAQAAAAnAAkAAAAPAAUAAAAnAAoAAAAPAAYAAAAiAAoAAAASAAIAAAAhAAoAAAASAAIAAAAgAAoAAAASAAIAAAAdAAwAAAAHAAAAAAAqAAoAAAAGAAAAAAArAAoAAAAOAAQAAAAtAAcAAAAIAAAAAAAsAAcAAAAMAAUAAAA=")
 tile_set = SubResource("TileSet_0hol4")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_py6g0")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_hsvsk")]
 position = Vector2(48, 568)
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
-stream = ExtResource("4_g31h8")
+stream = ExtResource("4_fcb7b")
 volume_db = 11.455
 
 [node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
@@ -310,7 +310,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
 [node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("5_hy5x3")
+script = ExtResource("5_ov8fk")
 
 [node name="MessageLabel" type="Label" parent="."]
 anchors_preset = 10
@@ -325,7 +325,7 @@ text = "bonne aventure!"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(52, 569)
 scale = Vector2(3, 3)
-stream = ExtResource("6_dmmei")
+stream = ExtResource("6_pmra4")
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
@@ -338,17 +338,17 @@ text = "Appuie sur Espace pour commencer !
 
 [node name="portail" type="Area2D" parent="."]
 position = Vector2(54, 585)
-script = ExtResource("7_bee8o")
+script = ExtResource("7_1bx01")
 
 [node name="Sprite2D" type="Sprite2D" parent="portail"]
 
 [node name="gamemanager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("8_y88yj")
+script = ExtResource("8_vq5n0")
 
-[node name="fin" parent="." instance=ExtResource("9_675ay")]
+[node name="fin" parent="." instance=ExtResource("9_xt2o7")]
 position = Vector2(2404, 131)
-target_level = ExtResource("10_q41qf")
+target_level = ExtResource("10_beuva")
 
 [node name="ui" type="CanvasLayer" parent="."]
 
@@ -373,61 +373,61 @@ text = "melon d’eau: 0
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="collectible" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(236, 487)
 
-[node name="collectible2" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible2" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(455, 360)
 
-[node name="collectible3" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible3" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(163, 258)
 
-[node name="collectible4" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible4" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(406, 116)
 
-[node name="collectible5" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible5" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(649, 215)
 
-[node name="collectible6" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible6" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(787, 446)
 
-[node name="collectible7" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible7" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1026, 499)
 
-[node name="collectible8" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible8" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1124, 356)
 
-[node name="collectible9" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible9" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(907, 184)
 
-[node name="collectible10" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible10" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1321, 209)
 
-[node name="collectible11" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible11" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1528, 212)
 
-[node name="collectible12" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible12" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1683, 307)
 
-[node name="collectible13" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible13" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(2228, 504)
 
-[node name="collectible14" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible14" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(2059, 455)
 
-[node name="collectible15" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible15" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1607, 452)
 
-[node name="collectible16" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible16" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1173, 581)
 
-[node name="collectible17" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible17" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1815, 591)
 
-[node name="collectible18" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible18" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(2330, 265)
 
-[node name="collectible19" parent="." instance=ExtResource("11_rr1tt")]
+[node name="collectible19" parent="." instance=ExtResource("11_05se8")]
 position = Vector2(1416, 539)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

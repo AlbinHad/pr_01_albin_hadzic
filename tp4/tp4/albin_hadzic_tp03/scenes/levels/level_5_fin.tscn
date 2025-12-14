@@ -1,21 +1,21 @@
 [gd_scene load_steps=16 format=4 uid="uid://dp7ga2516absi"]
 
-[ext_resource type="Texture2D" uid="uid://cvkd36qhckb2s" path="res://assets/images/Brown.png" id="1_0cmfa"]
-[ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_jo5yu"]
-[ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/personnage_principal.tscn" id="3_effod"]
-[ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_3uufb"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://area_2d.gd" id="5_dn1lc"]
-[ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_14sqx"]
-[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://portail.gd" id="7_xvr22"]
-[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://game_manager.gd" id="8_46fu8"]
-[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/fin.tscn" id="9_aytl4"]
-[ext_resource type="PackedScene" uid="uid://dj8qke8xhrwo" path="res://scenes/main_menu.tscn" id="10_kaiop"]
-[ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_effod"]
-[ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/collectible.tscn" id="11_jo5yu"]
-[ext_resource type="PackedScene" uid="uid://dr3d142oqe0hq" path="res://ennemi.tscn" id="13_3uufb"]
+[ext_resource type="Texture2D" uid="uid://cvkd36qhckb2s" path="res://assets/images/Brown.png" id="1_h8ejh"]
+[ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_tufrv"]
+[ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_157v4"]
+[ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_siuxf"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_j28h7"]
+[ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_5vquk"]
+[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_2jccw"]
+[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/objets/game_manager.gd" id="8_1buau"]
+[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_1cnen"]
+[ext_resource type="PackedScene" uid="uid://dj8qke8xhrwo" path="res://scenes/menu/main_menu.tscn" id="10_1qyt8"]
+[ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_puxc4"]
+[ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="12_2fs5b"]
+[ext_resource type="PackedScene" uid="uid://dr3d142oqe0hq" path="res://scenes/objets/ennemi.tscn" id="13_h33u3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
-texture = ExtResource("2_jo5yu")
+texture = ExtResource("2_tufrv")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -300,7 +300,7 @@ offset_left = -3.0
 offset_top = -38.0
 offset_right = 2540.0
 offset_bottom = 667.0
-texture = ExtResource("1_0cmfa")
+texture = ExtResource("1_h8ejh")
 stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -309,11 +309,11 @@ scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAbAP//AAASAAUAAAAcAP//AAASAAUAAAAdAP//AAASAAUAAAAeAP//AAASAAUAAAAfAP//AAASAAUAAAAgAP//AAASAAUAAAAhAP//AAASAAUAAAAiAP//AAASAAUAAAAjAP//AAASAAUAAAAkAP//AAASAAUAAAAlAP//AAASAAUAAAAmAP//AAASAAUAAAAnAP//AAASAAUAAAAoAP//AAASAAUAAAApAP//AAASAAUAAAAqAP//AAASAAUAAAAsAP//AAASAAUAAAAtAP//AAASAAUAAAAuAP//AAASAAUAAAAvAP//AAASAAUAAAArAP//AAASAAUAAAA0AP//AAASAAQAAAAwAP//AAASAAUAAAAxAP//AAASAAUAAAAyAP//AAASAAUAAAAzAP//AAASAAUAAAAAAP//AAASAAUAAAABAP//AAASAAUAAAACAP//AAASAAUAAAADAP//AAASAAUAAAAEAP//AAASAAUAAAAFAP//AAASAAUAAAAGAP//AAASAAUAAAAHAP//AAASAAUAAAAIAP//AAASAAUAAAAJAP//AAASAAUAAAAKAP//AAASAAUAAAALAP//AAASAAUAAAAMAP//AAASAAUAAAANAP//AAASAAUAAAAOAP//AAASAAUAAAAPAP//AAASAAUAAAAQAP//AAASAAUAAAARAP//AAASAAUAAAASAP//AAASAAUAAAATAP//AAASAAUAAAAUAP//AAASAAUAAAAVAP//AAASAAUAAAAWAP//AAASAAUAAAAXAP//AAASAAUAAAAYAP//AAASAAUAAAAZAP//AAASAAUAAAAaAP//AAASAAUAAAD//wAAAAASAAUAAAD//wEAAAASAAUAAAD//wIAAAASAAUAAAD//wMAAAASAAUAAAD//wQAAAASAAUAAAD//wUAAAASAAUAAAD//wYAAAASAAUAAAD//wcAAAASAAUAAAD//wgAAAASAAUAAAD//wkAAAASAAUAAAD//woAAAASAAUAAAD//wsAAAASAAUAAAD//w0AAAABAAQAAAD/////AAASAAUAAAA0AAAAAAASAAQAAAA0AAEAAAASAAQAAAA0AAIAAAASAAQAAAA0AAMAAAASAAQAAAA0AAQAAAASAAQAAAA0AAUAAAASAAQAAAA0AAYAAAASAAQAAAA0AAcAAAASAAQAAAA0AAgAAAASAAQAAAA0AAkAAAASAAQAAAA0AAoAAAASAAQAAAA0AAsAAAASAAQAAAA0AAwAAAASAAQAAAAAAA0AAAABAAQAAAABAA0AAAABAAQAAAACAA0AAAABAAQAAAADAA0AAAABAAQAAAAEAA0AAAABAAQAAAAFAA0AAAABAAQAAAAGAA0AAAABAAQAAAAHAA0AAAABAAQAAAAIAA0AAAABAAQAAAAJAA0AAAABAAQAAAAKAA0AAAABAAQAAAALAA0AAAABAAQAAAAMAA0AAAABAAQAAAANAA0AAAABAAQAAAAOAA0AAAABAAQAAAAPAA0AAAABAAQAAAAQAA0AAAABAAQAAAARAA0AAAABAAQAAAASAA0AAAABAAQAAAATAA0AAAABAAQAAAAUAA0AAAABAAQAAAAVAA0AAAABAAQAAAAWAA0AAAABAAQAAAAXAA0AAAABAAQAAAAYAA0AAAABAAQAAAAZAA0AAAABAAQAAAAaAA0AAAABAAQAAAAbAA0AAAABAAQAAAAcAA0AAAABAAQAAAAdAA0AAAABAAQAAAAeAA0AAAABAAQAAAAfAA0AAAABAAQAAAAgAA0AAAABAAQAAAAhAA0AAAABAAQAAAAiAA0AAAABAAQAAAAjAA0AAAABAAQAAAAkAA0AAAABAAQAAAAlAA0AAAABAAQAAAAmAA0AAAABAAQAAAAnAA0AAAABAAQAAAAoAA0AAAABAAQAAAApAA0AAAABAAQAAAAqAA0AAAABAAQAAAArAA0AAAABAAQAAAAsAA0AAAABAAQAAAAtAA0AAAABAAQAAAAuAA0AAAABAAQAAAAvAA0AAAABAAQAAAAwAA0AAAABAAQAAAAxAA0AAAABAAQAAAAyAA0AAAABAAQAAAAzAA0AAAABAAQAAAA0AA0AAAABAAQAAAAAAAUAAAAMAAEAAAABAAUAAAAMAAEAAAACAAUAAAAMAAEAAAD//wwAAAASAAUAAAAAAAYAAAAPAAEAAAAAAAcAAAAPAAEAAAAAAAgAAAAPAAEAAAAAAAkAAAAPAAEAAAAAAAoAAAAPAAIAAAACAAYAAAAPAAEAAAACAAcAAAAPAAEAAAACAAgAAAAPAAIAAAABAAkAAAAPAAIAAAAGAAUAAAAMAAEAAAAIAAYAAAAMAAAAAAAJAAYAAAANAAAAAAAKAAYAAAAOAAAAAAAKAAcAAAANAAAAAAALAAcAAAAOAAAAAAANAAUAAAAMAAAAAAAOAAUAAAAOAAAAAAABAAgAAAAPAAEAAAABAAcAAAAPAAEAAAABAAYAAAAPAAEAAAAJAAcAAAAMAAAAAAAQAAcAAAAMAAAAAAAIAAcAAAASAAEAAAARAAcAAAANAAAAAAASAAcAAAAMAAEAAAATAAcAAAANAAAAAAAUAAcAAAANAAAAAAAVAAcAAAANAAAAAAAWAAcAAAAOAAAAAAASAAEAAAAPAAAAAAASAAIAAAAPAAEAAAASAAMAAAAPAAEAAAASAAQAAAAPAAEAAAASAAUAAAAMAAEAAAAaAAwAAAAPAAEAAAAaAAsAAAAPAAEAAAAaAAoAAAAPAAEAAAAaAAkAAAAPAAEAAAAaAAgAAAAPAAEAAAAaAAcAAAAPAAEAAAAaAAYAAAAPAAEAAAAaAAUAAAAPAAEAAAAaAAQAAAAPAAEAAAAaAAMAAAAPAAAAAAAcAAIAAAAMAAAAAAAdAAIAAAAOAAAAAAAZAAsAAAASAAEAAAAYAAsAAAASAAEAAAAXAAsAAAASAAEAAAAWAAsAAAASAAEAAAAVAAsAAAARAAEAAAAZAAMAAAASAAEAAAAYAAMAAAARAAEAAAAfAAQAAAAMAAAAAAAgAAQAAAAOAAAAAAAhAAUAAAAOAAAAAAAgAAUAAAAMAAAAAAAjAAcAAAAMAAEAAAAkAAgAAAAMAAAAAAAlAAgAAAANAAAAAAAmAAgAAAAOAAAAAAAnAAcAAAAMAAAAAAAoAAcAAAANAAAAAAApAAcAAAAOAAAAAAArAAYAAAAMAAEAAAAtAAUAAAAMAAAAAAAuAAUAAAANAAAAAAAvAAUAAAAOAAAAAAAZAAoAAAAMAAEAAAASAAYAAAASAAEAAAA=")
 tile_set = SubResource("TileSet_0hol4")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_effod")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_157v4")]
 position = Vector2(98, 152)
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
-stream = ExtResource("4_3uufb")
+stream = ExtResource("4_siuxf")
 volume_db = 11.455
 
 [node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
@@ -323,7 +323,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
 [node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("5_dn1lc")
+script = ExtResource("5_j28h7")
 
 [node name="MessageLabel" type="Label" parent="."]
 anchors_preset = 10
@@ -338,7 +338,7 @@ text = "bonne aventure!"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(105, 182)
 scale = Vector2(3, 3)
-stream = ExtResource("6_14sqx")
+stream = ExtResource("6_5vquk")
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
@@ -351,17 +351,17 @@ text = "Appuie sur Espace pour commencer !
 
 [node name="portail" type="Area2D" parent="."]
 position = Vector2(93, 172)
-script = ExtResource("7_xvr22")
+script = ExtResource("7_2jccw")
 
 [node name="Sprite2D" type="Sprite2D" parent="portail"]
 
 [node name="gamemanager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("8_46fu8")
+script = ExtResource("8_1buau")
 
-[node name="fin" parent="." instance=ExtResource("9_aytl4")]
+[node name="fin" parent="." instance=ExtResource("9_1cnen")]
 position = Vector2(2436, 548)
-target_level = ExtResource("10_kaiop")
+target_level = ExtResource("10_1qyt8")
 
 [node name="ui" type="CanvasLayer" parent="."]
 
@@ -411,59 +411,59 @@ grow_vertical = 2
 [node name="heart" type="TextureRect" parent="ui/heart/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("11_effod")
+texture = ExtResource("11_puxc4")
 expand_mode = 2
 
 [node name="heart3" type="TextureRect" parent="ui/heart/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("11_effod")
+texture = ExtResource("11_puxc4")
 expand_mode = 2
 
 [node name="heart2" type="TextureRect" parent="ui/heart/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("11_effod")
+texture = ExtResource("11_puxc4")
 expand_mode = 2
 
 [node name="collectible" type="Node" parent="."]
 
-[node name="collectible" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(446, 257)
 
-[node name="collectible2" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible2" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(1142, 496)
 
-[node name="collectible3" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible3" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(676, 214)
 
-[node name="collectible4" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible4" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(998, 317)
 
-[node name="collectible5" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible5" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(736, 597)
 
-[node name="collectible6" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible6" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(1383, 67)
 
-[node name="collectible7" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible7" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(1607, 212)
 
-[node name="collectible8" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible8" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(1796, 356)
 
-[node name="collectible9" parent="collectible" instance=ExtResource("11_jo5yu")]
+[node name="collectible9" parent="collectible" instance=ExtResource("12_2fs5b")]
 position = Vector2(1933, 306)
 
 [node name="ennemis" type="Node" parent="."]
 
-[node name="enemi" parent="ennemis" instance=ExtResource("13_3uufb")]
+[node name="enemi" parent="ennemis" instance=ExtResource("13_h33u3")]
 position = Vector2(2212, 190)
 
-[node name="enemi2" parent="ennemis" instance=ExtResource("13_3uufb")]
+[node name="enemi2" parent="ennemis" instance=ExtResource("13_h33u3")]
 position = Vector2(292, 193)
 
-[node name="enemi" parent="." instance=ExtResource("13_3uufb")]
+[node name="enemi" parent="." instance=ExtResource("13_h33u3")]
 position = Vector2(492, 574)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

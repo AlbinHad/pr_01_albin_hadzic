@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://cuffgeudpsbws"]
 
-[ext_resource type="Script" uid="uid://csx8ucvhhb28" path="res://scenes/collectible.gd" id="1_1pg6c"]
+[ext_resource type="Script" uid="uid://csx8ucvhhb28" path="res://scenes/objets/collectible.gd" id="1_1pg6c"]
 [ext_resource type="Texture2D" uid="uid://bg5uakdnjlxom" path="res://assets/images/Melon.png" id="1_bkg8t"]
 [ext_resource type="AudioStream" uid="uid://b8sg6tjhstv8y" path="res://assets/sons/winner-game-sound-404167.mp3" id="3_61c27"]
 
