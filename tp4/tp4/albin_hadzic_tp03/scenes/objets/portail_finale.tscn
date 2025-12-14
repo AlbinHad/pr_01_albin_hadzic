@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://d4i82m1tvnkrj"]
+
+[ext_resource type="Script" uid="uid://cqperjyhgn7m" path="res://portail_finale.gd" id="1_bu5ra"]
+[ext_resource type="Texture2D" uid="uid://dsal6jss1hwto" path="res://assets/images/Purple Portal Sprite Sheet.png" id="2_v8tfb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdxwa"]
+size = Vector2(12, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8r60"]
+atlas = ExtResource("2_v8tfb")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2u1gi"]
+atlas = ExtResource("2_v8tfb")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sn1pn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8r60")
+}],
+"loop": false,
+"name": &"closed",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2u1gi")
+}],
+"loop": false,
+"name": &"open",
+"speed": 5.0
+}]
+
+[node name="portail_finale" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_bu5ra")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_fdxwa")
+disabled = true
+
+[node name="closed" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4, -3)
+sprite_frames = SubResource("SpriteFrames_sn1pn")
+animation = &"closed"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

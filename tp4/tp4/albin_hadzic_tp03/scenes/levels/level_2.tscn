@@ -6,7 +6,6 @@
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_xbcdb"]
 [ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_s77qv"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_5hnhx"]
-[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_78pok"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_lvfll"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="9_jcnlr"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="10_5kfcu"]
@@ -224,6 +223,21 @@ texture = ExtResource("2_eoq84")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_epypp")
 
+[sub_resource type="GDScript" id="GDScript_nt80m"]
+script/source = "extends Area2D
+
+@export var next_scene: String
+
+func _on_body_entered(body):
+	if body.is_in_group(\"player\"):
+		var gm = get_tree().get_first_node_in_group(\"gamemanager\")
+
+		if gm and gm.has_key:
+			get_tree().change_scene_to_file(next_scene)
+		else:
+			print(\"🚫 Clé requise pour utiliser le portail\")
+"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tv7cl"]
 draw_center = false
 corner_detail = 14
@@ -294,7 +308,7 @@ text = "Appuie sur Espace pour commencer !
 
 [node name="portail" type="Area2D" parent="."]
 position = Vector2(142, 206)
-script = ExtResource("7_78pok")
+script = SubResource("GDScript_nt80m")
 
 [node name="Sprite2D" type="Sprite2D" parent="portail"]
 

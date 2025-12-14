@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://dp7ga2516absi"]
+[gd_scene load_steps=18 format=4 uid="uid://dp7ga2516absi"]
 
 [ext_resource type="Texture2D" uid="uid://cvkd36qhckb2s" path="res://assets/images/Brown.png" id="1_h8ejh"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_tufrv"]
@@ -6,16 +6,12 @@
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_siuxf"]
 [ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_j28h7"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_5vquk"]
-[ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_2jccw"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_1buau"]
-[ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_1cnen"]
-[ext_resource type="PackedScene" uid="uid://dhtwxir13y6sv" path="res://scenes/levels/level_6_fin.tscn" id="10_h8ejh"]
 [ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_puxc4"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="12_2fs5b"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="12_tufrv"]
-[ext_resource type="PackedScene" uid="uid://bxhmnu3sgykb3" path="res://scenes/cle.tscn" id="14_tufrv"]
-[ext_resource type="Script" uid="uid://lg8jjvvgc2dy" path="res://scenes/levels/portal.gd" id="15_siuxf"]
-[ext_resource type="Texture2D" uid="uid://dsal6jss1hwto" path="res://assets/images/Purple Portal Sprite Sheet.png" id="16_j28h7"]
+[ext_resource type="PackedScene" uid="uid://cr2xxin0l14hn" path="res://scenes/key.tscn" id="13_h8ejh"]
+[ext_resource type="PackedScene" uid="uid://d4i82m1tvnkrj" path="res://scenes/objets/portail_finale.tscn" id="14_tufrv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
 texture = ExtResource("2_tufrv")
@@ -306,164 +302,6 @@ bg_color = Color(0.306338, 0.684814, 0.517636, 1)
 bg_color = Color(0, 0, 0, 1)
 corner_detail = 9
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_siuxf"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j28h7"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5vquk"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(128, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2jccw"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1buau"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(256, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1cnen"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(320, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1qyt8"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(384, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_puxc4"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(448, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2fs5b"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(0, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h33u3"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(64, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o0i5q"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(128, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w8ia4"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(192, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cv2uj"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(256, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gr0el"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(320, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fwp1f"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(384, 64, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uu3wv"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(0, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2xi7r"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(64, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xn82e"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(128, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6w6yl"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(192, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_04ase"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(256, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hasd8"]
-atlas = ExtResource("16_j28h7")
-region = Rect2(320, 128, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_tiifs"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_siuxf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j28h7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5vquk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2jccw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1buau")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1cnen")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1qyt8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_puxc4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2fs5b")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h33u3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o0i5q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w8ia4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cv2uj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gr0el")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fwp1f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uu3wv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2xi7r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xn82e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6w6yl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_04ase")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hasd8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_siuxf"]
-distance = -446.0
-
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -521,19 +359,9 @@ offset_bottom = 65.0
 text = "Appuie sur Espace pour commencer !
 "
 
-[node name="portail" type="Area2D" parent="."]
-position = Vector2(93, 172)
-script = ExtResource("7_2jccw")
-
-[node name="Sprite2D" type="Sprite2D" parent="portail"]
-
 [node name="gamemanager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("8_1buau")
-
-[node name="fin" parent="." instance=ExtResource("9_1cnen")]
-position = Vector2(2436, 548)
-target_level = ExtResource("10_h8ejh")
 
 [node name="ui" type="CanvasLayer" parent="."]
 
@@ -691,27 +519,12 @@ position = Vector2(1933, 306)
 
 [node name="ennemis" type="Node" parent="."]
 
-[node name="AnimatedSprite2D" parent="." instance=ExtResource("14_tufrv")]
-position = Vector2(266, 572)
+[node name="key" parent="." instance=ExtResource("13_h8ejh")]
+position = Vector2(1155, 96)
 
-[node name="portal" type="Area2D" parent="."]
-script = ExtResource("15_siuxf")
-next_level_path = "res://scenes/levels/level_6_fin.tscn"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="portal"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="portal"]
-position = Vector2(2291, 143)
-scale = Vector2(2.64063, 3.6875)
-sprite_frames = SubResource("SpriteFrames_tiifs")
-autoplay = "default"
-frame_progress = 0.137518
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7, -77)
-shape = SubResource("WorldBoundaryShape2D_siuxf")
+[node name="portail_finale" parent="." instance=ExtResource("14_tufrv")]
+position = Vector2(2199, 186)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/resume" to="ui/pause" method="_on_resume_pressed"]
 [connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/menu" to="ui/pause" method="_on_menu_pressed"]
-[connection signal="body_entered" from="portal" to="portail" method="_on_portal_body_entered"]

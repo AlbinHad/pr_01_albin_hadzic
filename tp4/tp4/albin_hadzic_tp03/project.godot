@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="tp2_bonne_version"
-run/main_scene="uid://dhtwxir13y6sv"
+run/main_scene="uid://dp7ga2516absi"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
 [autoload]

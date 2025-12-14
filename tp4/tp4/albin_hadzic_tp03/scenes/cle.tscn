@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bxhmnu3sgykb3"]
+[gd_scene load_steps=17 format=3 uid="uid://cqvwm272d30ro"]
 
 [ext_resource type="Texture2D" uid="uid://d0aw41fa8s12q" path="res://assets/images/key-white.png" id="1_uwpwn"]
 
@@ -94,17 +94,37 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="GDScript" id="GDScript_uwpwn"]
+script/source = "extends AnimatedSprite2D
+
+func _ready():
+	play(\"idle\")
+
+func _on_Area2D_body_entered(body):
+	if body is CharacterBody2D:
+		GameManager.has_key = true
+		print(\"🔑 Clé obtenue\")
+		queue_free()
+"
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gonyi"]
 size = Vector2(13.44, 27.4286)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[node name="key" type="AnimatedSprite2D"]
 texture_filter = 1
 position = Vector2(-1, -10)
 scale = Vector2(1.5625, 1.53125)
 sprite_frames = SubResource("SpriteFrames_gr0el")
 autoplay = "default"
 frame_progress = 0.339233
+script = SubResource("GDScript_uwpwn")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0.96, 1.95918)
 shape = SubResource("RectangleShape2D_gonyi")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
