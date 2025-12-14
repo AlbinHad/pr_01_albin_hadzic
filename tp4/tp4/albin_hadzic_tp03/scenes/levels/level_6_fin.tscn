@@ -443,6 +443,9 @@ size_flags_horizontal = 4
 texture = ExtResource("11_pq368")
 expand_mode = 2
 
+[node name="enemi" parent="ui/heart/BoxContainer" instance=ExtResource("13_0wqsv")]
+position = Vector2(1875.5, 287.5)
+
 [node name="pause" type="Node" parent="ui"]
 script = ExtResource("12_ugyl2")
 
@@ -526,7 +529,7 @@ position = Vector2(2474, 311)
 position = Vector2(3224, 311)
 
 [node name="collectible8" parent="." instance=ExtResource("12_foe5x")]
-position = Vector2(2829, 309)
+position = Vector2(2644, 462)
 
 [node name="collectible9" parent="." instance=ExtResource("12_foe5x")]
 position = Vector2(312, 703)
