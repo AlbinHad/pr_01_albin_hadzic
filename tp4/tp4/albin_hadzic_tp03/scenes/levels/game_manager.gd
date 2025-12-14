@@ -6,11 +6,18 @@ var lives = 3
 
 func decrease_health():
 	lives -= 1
-	print(lives)
-	if(lives == 0):
-		get_tree().reload_current_scene()
+	print("Lives:", lives)
+
+	if lives <= 0:
+		respawn_player()
 
 func add_point():
 	points += 1
 	print(points)
 	points_label.text = "melons d’eau: " + str(points)
+func respawn_player():
+	lives = 3
+
+	var player = get_tree().get_first_node_in_group("player")
+	if player:
+		player.global_position = Vector2(100, 100)
