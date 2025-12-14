@@ -21,3 +21,7 @@ func respawn_player():
 	var player = get_tree().get_first_node_in_group("player")
 	if player:
 		player.global_position = Vector2(100, 100)
+var has_key := false
+func give_key():
+	has_key = true
+	print("🔑 Clé récupérée")

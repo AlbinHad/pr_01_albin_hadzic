@@ -14,6 +14,10 @@ config/name="tp2_bonne_version"
 run/main_scene="uid://dp7ga2516absi"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[autoload]
+
+GameManager="*res://scenes/levels/game_manager.gd"
+
 [display]
 
 window/defaults/default_clear_color=Color(0.3, 0.3, 0.3, 1)
