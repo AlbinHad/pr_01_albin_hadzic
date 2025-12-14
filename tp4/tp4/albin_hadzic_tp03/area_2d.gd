@@ -7,3 +7,9 @@ func _process(delta):
 			return
 	
 	$"../MessageLabel".text = ""
+
+
+func _on_area_2d_2_body_entered(body: Node2D) -> void:
+	print("Touched" +body.name)
+	if (body.name == "CharacterBody2D"):
+		get_tree().reload_current_scene()
