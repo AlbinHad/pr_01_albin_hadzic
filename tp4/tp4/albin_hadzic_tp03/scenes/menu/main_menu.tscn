@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dj8qke8xhrwo"]
+[gd_scene load_steps=5 format=3 uid="uid://dj8qke8xhrwo"]
 
 [ext_resource type="Script" uid="uid://cvdqf42yot01c" path="res://scenes/menu/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://byaoas1e16x41" path="res://assets/images/Pink.png" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://c12gj50b1tb2r" path="res://assets/images/Cool Text - astronomic 495668935567644.png" id="2_bqqt6"]
+[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="4_kiqgm"]
 
 [node name="MainMenu" type="Node"]
 script = ExtResource("1_bqqt6")
@@ -43,8 +44,9 @@ offset_right = -47.0
 offset_bottom = 211.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_kiqgm")
 theme_override_font_sizes/font_size = 30
-text = "level 1
+text = "start
 "
 
 [node name="level2" type="Button" parent="."]
@@ -59,6 +61,7 @@ offset_right = 345.0
 offset_bottom = 208.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_kiqgm")
 theme_override_font_sizes/font_size = 30
 text = "level 2
 "

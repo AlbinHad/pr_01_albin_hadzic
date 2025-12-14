@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dqe0mqla062d4"]
+[gd_scene load_steps=19 format=4 uid="uid://dqe0mqla062d4"]
 
 [ext_resource type="Texture2D" uid="uid://ctihthkb7r8y7" path="res://assets/images/Yellow.png" id="1_56dhn"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_ax3dk"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_8uepa"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_q7pjq"]
 [ext_resource type="PackedScene" uid="uid://c60dwfrgdhjop" path="res://scenes/levels/level_4.tscn" id="10_56dhn"]
+[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="10_qi5uv"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="11_qi5uv"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="11_sx8yt"]
 
@@ -358,6 +359,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.371416, 0.706383, 0.404362, 1)
+theme_override_fonts/font = ExtResource("10_qi5uv")
 theme_override_font_sizes/font_size = 20
 text = "melon d’eau: 0
 "
@@ -369,7 +371,6 @@ script = ExtResource("11_qi5uv")
 
 [node name="pausePanel" type="Panel" parent="ui/pause"]
 unique_name_in_owner = true
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -390,6 +391,7 @@ offset_right = 225.5
 offset_bottom = 83.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_qi5uv")
 theme_override_font_sizes/font_size = 50
 text = "GAME PAUSED"
 horizontal_alignment = 1
@@ -413,6 +415,7 @@ theme_override_constants/separation = 10
 process_mode = 3
 texture_filter = 1
 layout_mode = 2
+theme_override_fonts/font = ExtResource("10_qi5uv")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_f6egh")
 text = "Resume"
@@ -421,6 +424,7 @@ text = "Resume"
 process_mode = 3
 texture_filter = 1
 layout_mode = 2
+theme_override_fonts/font = ExtResource("10_qi5uv")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/focus = SubResource("StyleBoxFlat_t4txi")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_apo5x")
