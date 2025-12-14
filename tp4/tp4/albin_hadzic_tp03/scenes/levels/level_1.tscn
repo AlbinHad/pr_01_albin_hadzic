@@ -1,16 +1,17 @@
-[gd_scene load_steps=19 format=4 uid="uid://csa1wfjq4g0jx"]
+[gd_scene load_steps=20 format=4 uid="uid://csa1wfjq4g0jx"]
 
 [ext_resource type="Texture2D" uid="uid://b63gd0y00pcnk" path="res://assets/images/Gray.png" id="1_2os1m"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_2os1m"]
 [ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_go7sj"]
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_7gny6"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_2aecg"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scrypt/area_2d.gd" id="5_2aecg"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_6dial"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_1s4pk"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="9_x2xxo"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="10_2cbcq"]
 [ext_resource type="PackedScene" uid="uid://d2yeie2abmeje" path="res://scenes/levels/level_2.tscn" id="10_2os1m"]
 [ext_resource type="PackedScene" uid="uid://dj8qke8xhrwo" path="res://scenes/menu/main_menu.tscn" id="11_go7sj"]
+[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="12_dnkej"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="12_iav0o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
@@ -367,6 +368,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.371416, 0.706383, 0.404362, 1)
+theme_override_fonts/font = ExtResource("12_dnkej")
 theme_override_font_sizes/font_size = 20
 text = "melon d’eau: 0
 "

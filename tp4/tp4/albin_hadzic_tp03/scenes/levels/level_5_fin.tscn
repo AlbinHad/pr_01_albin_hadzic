@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_tufrv"]
 [ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_157v4"]
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_siuxf"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_j28h7"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scrypt/area_2d.gd" id="5_j28h7"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_5vquk"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_1buau"]
 [ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_puxc4"]

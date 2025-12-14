@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://d4i82m1tvnkrj"]
 
-[ext_resource type="Script" uid="uid://cqperjyhgn7m" path="res://portail_finale.gd" id="1_bu5ra"]
+[ext_resource type="Script" uid="uid://cqperjyhgn7m" path="res://scrypt/portail_finale.gd" id="1_bu5ra"]
 [ext_resource type="Texture2D" uid="uid://dsal6jss1hwto" path="res://assets/images/Purple Portal Sprite Sheet.png" id="2_v8tfb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdxwa"]

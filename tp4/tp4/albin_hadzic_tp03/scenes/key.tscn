@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://cr2xxin0l14hn"]
 
-[ext_resource type="Script" uid="uid://dt8oa33w2k4m5" path="res://scenes/key.gd" id="1_fttkb"]
+[ext_resource type="Script" uid="uid://dt8oa33w2k4m5" path="res://scrypt/key.gd" id="1_fttkb"]
 [ext_resource type="Texture2D" uid="uid://d0aw41fa8s12q" path="res://assets/images/key-white.png" id="1_yk2u2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fttkb"]

@@ -4,16 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_ugyl2"]
 [ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_dtufh"]
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_ch5w3"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_dnr85"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scrypt/area_2d.gd" id="5_dnr85"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_0uulc"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_np8k4"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_wg4qu"]
-[ext_resource type="PackedScene" uid="uid://dj8qke8xhrwo" path="res://scenes/menu/main_menu.tscn" id="10_71e5b"]
+[ext_resource type="PackedScene" uid="uid://cldnlkae1mbju" path="res://scenes/objets/victory.tscn" id="9_xpycj"]
 [ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_pq368"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="12_foe5x"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="12_ugyl2"]
 [ext_resource type="PackedScene" uid="uid://dr3d142oqe0hq" path="res://scenes/objets/ennemi.tscn" id="13_0wqsv"]
-[ext_resource type="Script" uid="uid://bka3cpavg50rj" path="res://scenes/objets/fall_area.gd" id="14_hta5t"]
+[ext_resource type="Script" uid="uid://bka3cpavg50rj" path="res://scrypt/fall_area.gd" id="14_hta5t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
 texture = ExtResource("2_ugyl2")
@@ -329,7 +329,7 @@ texture_filter = 1
 offset_left = -3.0
 offset_top = -38.0
 offset_right = 3317.0
-offset_bottom = 933.0
+offset_bottom = 1345.0
 texture = ExtResource("1_xpycj")
 stretch_mode = 1
 
@@ -391,8 +391,8 @@ script = ExtResource("8_np8k4")
 hearts = [NodePath("../ui/heart/BoxContainer/heart"), NodePath("../ui/heart/BoxContainer/heart3"), NodePath("../ui/heart/BoxContainer/heart2")]
 
 [node name="fin" parent="." instance=ExtResource("9_wg4qu")]
-position = Vector2(3031, 549)
-target_level = ExtResource("10_71e5b")
+position = Vector2(3032, 549)
+target_level = ExtResource("9_xpycj")
 
 [node name="ui" type="CanvasLayer" parent="."]
 
@@ -456,9 +456,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("11_pq368")
 expand_mode = 2
-
-[node name="enemi" parent="ui/heart/BoxContainer" instance=ExtResource("13_0wqsv")]
-position = Vector2(1875.5, 287.5)
 
 [node name="pause" type="Node" parent="ui"]
 script = ExtResource("12_ugyl2")
@@ -559,8 +556,11 @@ script = ExtResource("14_hta5t")
 position = Vector2(-7, -77)
 shape = SubResource("WorldBoundaryShape2D_bn46g")
 
-[node name="collectible10" parent="." instance=ExtResource("12_foe5x")]
+[node name="ennemies" parent="." instance=ExtResource("12_foe5x")]
 position = Vector2(1657, 794)
+
+[node name="enemi" parent="ennemies" instance=ExtResource("13_0wqsv")]
+position = Vector2(1210, -504)
 
 [node name="enemi2" parent="." instance=ExtResource("13_0wqsv")]
 position = Vector2(1326, 866)

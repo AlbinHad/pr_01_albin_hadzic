@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=3 uid="uid://dwsvcr6qaxc1v"]
 
 [ext_resource type="Texture2D" uid="uid://dp8enw31bfjhm" path="res://assets/images/Jump (32x32).png" id="1_bkakb"]
-[ext_resource type="Script" uid="uid://vp67qf8raoke" path="res://scenes/objets/personnage_principal.gd" id="1_epg7g"]
+[ext_resource type="Script" uid="uid://vp67qf8raoke" path="res://scrypt/personnage_principal.gd" id="1_epg7g"]
 [ext_resource type="Texture2D" uid="uid://cqnmds5d33ssg" path="res://assets/images/Run (32x32).png" id="2_62u8o"]
 [ext_resource type="Texture2D" uid="uid://slsjih4w0v3l" path="res://assets/images/Idle (32x32).png" id="2_epg7g"]
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="5_xvjii"]

@@ -1,14 +1,15 @@
-[gd_scene load_steps=18 format=4 uid="uid://d2yeie2abmeje"]
+[gd_scene load_steps=19 format=4 uid="uid://d2yeie2abmeje"]
 
 [ext_resource type="Texture2D" uid="uid://ctihthkb7r8y7" path="res://assets/images/Yellow.png" id="1_15wb7"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_eoq84"]
 [ext_resource type="PackedScene" uid="uid://dwsvcr6qaxc1v" path="res://scenes/objets/personnage_principal.tscn" id="3_yl73a"]
 [ext_resource type="AudioStream" uid="uid://dlmfmbia4hmgr" path="res://assets/sons/BoingSound.mp3" id="4_xbcdb"]
-[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_s77qv"]
+[ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scrypt/area_2d.gd" id="5_s77qv"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_5hnhx"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_lvfll"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="9_jcnlr"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="10_5kfcu"]
+[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="10_brxtv"]
 [ext_resource type="PackedScene" uid="uid://dqe0mqla062d4" path="res://scenes/levels/level_3.tscn" id="10_hey2k"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="11_brxtv"]
 
@@ -337,6 +338,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.371416, 0.706383, 0.404362, 1)
+theme_override_fonts/font = ExtResource("10_brxtv")
 theme_override_font_sizes/font_size = 20
 text = "melon d’eau: 0
 "
