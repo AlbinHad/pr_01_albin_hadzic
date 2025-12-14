@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-
+@onready var game_manager: Node = %gamemanager
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -17,7 +17,9 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		if (y_delta > 30):
 			print ("Destroy enemy")
 			queue_free()
-			body.jump()
+			body.velocity.y = -400
+
 		else:
 			print("Decrease player health")
 			body.queue_free()
+			game_manager.decrease_health()

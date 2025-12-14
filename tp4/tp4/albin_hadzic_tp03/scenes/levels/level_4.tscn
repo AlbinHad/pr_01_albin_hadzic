@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_ov8fk"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_pmra4"]
 [ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_1bx01"]
-[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/objets/game_manager.gd" id="8_vq5n0"]
+[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_vq5n0"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_xt2o7"]
 [ext_resource type="PackedScene" uid="uid://dp7ga2516absi" path="res://scenes/levels/level_5_fin.tscn" id="10_beuva"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="11_05se8"]

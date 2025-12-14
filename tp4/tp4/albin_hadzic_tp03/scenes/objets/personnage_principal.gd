@@ -6,7 +6,7 @@ var SPEED = 400.0
 const JUMP_VELOCITY = -900.0
 @onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
 
-func jump ():
+
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _physics_process(delta: float) -> void:
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dhtwxir13y6sv"]
+[gd_scene load_steps=22 format=4 uid="uid://dhtwxir13y6sv"]
 
 [ext_resource type="Texture2D" uid="uid://byaoas1e16x41" path="res://assets/images/Pink.png" id="1_xpycj"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_ugyl2"]
@@ -7,11 +7,12 @@
 [ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scenes/objets/area_2d.gd" id="5_dnr85"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_0uulc"]
 [ext_resource type="Script" uid="uid://cywcdxqfhxqc0" path="res://scenes/objets/portail.gd" id="7_bs71u"]
-[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/objets/game_manager.gd" id="8_np8k4"]
+[ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_np8k4"]
 [ext_resource type="PackedScene" uid="uid://ba1mvt7s62icg" path="res://scenes/objets/fin.tscn" id="9_wg4qu"]
 [ext_resource type="PackedScene" uid="uid://dj8qke8xhrwo" path="res://scenes/menu/main_menu.tscn" id="10_71e5b"]
 [ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_pq368"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="12_foe5x"]
+[ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="12_ugyl2"]
 [ext_resource type="PackedScene" uid="uid://dr3d142oqe0hq" path="res://scenes/objets/ennemi.tscn" id="13_0wqsv"]
 [ext_resource type="Script" uid="uid://bka3cpavg50rj" path="res://scenes/objets/fall_area.gd" id="14_hta5t"]
 
@@ -293,6 +294,17 @@ texture = ExtResource("2_ugyl2")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_epypp")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xpycj"]
+draw_center = false
+corner_detail = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ugyl2"]
+bg_color = Color(0.306338, 0.684814, 0.517636, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtufh"]
+bg_color = Color(0, 0, 0, 1)
+corner_detail = 9
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_bn46g"]
 distance = 26.0
 
@@ -430,6 +442,68 @@ size_flags_horizontal = 4
 texture = ExtResource("11_pq368")
 expand_mode = 2
 
+[node name="pause" type="Node" parent="ui"]
+script = ExtResource("12_ugyl2")
+
+[node name="pausePanel" type="Panel" parent="ui/pause"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+
+[node name="Label" type="Label" parent="ui/pause/pausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.5
+offset_top = -83.5
+offset_right = 225.5
+offset_bottom = 83.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "GAME PAUSED"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ui/pause/pausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.0
+offset_top = -3.0
+offset_right = 190.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="resume" type="Button" parent="ui/pause/pausePanel/VBoxContainer"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_xpycj")
+text = "Resume"
+
+[node name="menu" type="Button" parent="ui/pause/pausePanel/VBoxContainer"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxFlat_ugyl2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_dtufh")
+text = "Main menu"
+
 [node name="collectible" type="Node" parent="."]
 
 [node name="collectible2" parent="." instance=ExtResource("12_foe5x")]
@@ -471,4 +545,6 @@ shape = SubResource("WorldBoundaryShape2D_bn46g")
 position = Vector2(986, 887)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/resume" to="ui/pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/menu" to="ui/pause" method="_on_menu_pressed"]
 [connection signal="body_entered" from="Area2D2" to="Area2D" method="_on_area_2d_2_body_entered"]
