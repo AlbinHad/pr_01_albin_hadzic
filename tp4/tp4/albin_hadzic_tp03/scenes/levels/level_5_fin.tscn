@@ -322,7 +322,7 @@ tile_map_data = PackedByteArray("AAAbAP//AAASAAUAAAAcAP//AAASAAUAAAAdAP//AAASAAU
 tile_set = SubResource("TileSet_0hol4")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_157v4")]
-position = Vector2(98, 152)
+position = Vector2(45, 181)
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
 stream = ExtResource("4_siuxf")
@@ -348,7 +348,7 @@ grow_horizontal = 2
 text = "bonne aventure!"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(105, 182)
+position = Vector2(46, 190)
 scale = Vector2(3, 3)
 stream = ExtResource("6_5vquk")
 autoplay = true
