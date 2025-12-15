@@ -1,9 +1,10 @@
 # TP_04 — ASTRONOMIC
 
 ## Description
-**ASTRONOMIC** est un jeu de plateforme 2D qui paraît simple à première vue, mais dont le
-niveau de difficulté demande concentration et des sauts précis.
-Le joueur progresse à travers des niveaux en évitant les obstacles, en éliminant des
+**ASTRONOMIC** est un jeu de plateforme 2D aux décors simples et colorés, composé de
+plateformes flottantes, d’obstacles et d’ennemis. Il paraît simple à première vue,
+mais son niveau de difficulté demande concentration, timing et des sauts précis.
+Le joueur progresse à travers les niveaux en évitant les obstacles, en éliminant des
 ennemis, en accumulant des points et en récupérant une clé pour accéder au dernier niveau.
 
 ## Comment jouer
@@ -22,7 +23,7 @@ Jeu développé avec **Godot** et exporté en **HTML5**.
   https://pixelfrog-assets.itch.io/pixel-adventure-1  
   https://pixelfrog-assets.itch.io/pixel-adventure-2  
 - Font : Godot Pixel Fonts (Itch.io)  
-  https://itch.io/queue/c/733269/godot-pixel-fonts  
+  https://itch.io/queue/c/733269/godot-pixel-fonts?game_id=718254&password=  
 - Sons : Pixabay, Mixkit  
 - Outils : Godot, Visual Studio Code  
 - Export : HTML5  
@@ -33,8 +34,4 @@ Jeu développé avec **Godot** et exporté en **HTML5**.
 **Albin Hadzic**  
 Techniques d’intégration multimédia (TIM)  
 Collège Montmorency
-
-
----
-
 
