@@ -39,15 +39,15 @@ func _physics_process(delta: float) -> void:
 	sprite_2d.flip_h = velocity.x < 0
 
 
-# 🔥 REBOND SUR LE CÔTÉ (corrigé, sans input)
+#  REBOND SUR LE CÔTÉ (corrigé, sans input)
 func jump_side(x):
 	velocity.y = JUMP_VELOCITY
 	velocity.x = x
 
 
-# 🍉 BONUS RAMASSÉ (inchangé)
+#  BONUS RAMASSÉ (inchangé)
 func _on_body_entered(body):
 	if body.name == "CharacterBody2D":
 		SPEED = 700.0
-		print("🍉 Melon ramassé ! Vitesse augmentée.")
+		print(" Melon ramassé ! Vitesse augmentée.")
 		queue_free()
