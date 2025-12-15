@@ -3,7 +3,7 @@
 ## Description
 **ASTRONOMIC** est un jeu de plateforme 2D aux décors simples et colorés, composé de
 plateformes flottantes, d’obstacles et d’ennemis. Il paraît simple à première vue,
-mais son niveau de difficulté demande concentration, timing et **des sauts précis**.
+mais son niveau de difficulté demande concentration, timing et des **sauts précis**.
 Le joueur progresse à travers les niveaux en évitant les obstacles, en éliminant des
 ennemis, en accumulant des points et en récupérant une clé pour accéder au dernier niveau.
 
