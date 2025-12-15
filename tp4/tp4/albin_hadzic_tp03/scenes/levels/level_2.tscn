@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://d2yeie2abmeje"]
+[gd_scene load_steps=20 format=4 uid="uid://d2yeie2abmeje"]
 
 [ext_resource type="Texture2D" uid="uid://ctihthkb7r8y7" path="res://assets/images/Yellow.png" id="1_15wb7"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_eoq84"]
@@ -12,6 +12,7 @@
 [ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="10_brxtv"]
 [ext_resource type="PackedScene" uid="uid://dqe0mqla062d4" path="res://scenes/levels/level_3.tscn" id="10_hey2k"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="11_brxtv"]
+[ext_resource type="PackedScene" uid="uid://bh08hypgehqk5" path="res://scenes/objets/powerup.tscn" id="13_tv7cl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epypp"]
 texture = ExtResource("2_eoq84")
@@ -411,7 +412,7 @@ text = "Main menu"
 position = Vector2(474, 210)
 
 [node name="collectible2" parent="." instance=ExtResource("9_jcnlr")]
-position = Vector2(73, 596)
+position = Vector2(339, 406)
 
 [node name="collectible3" parent="." instance=ExtResource("9_jcnlr")]
 position = Vector2(1176, 290)
@@ -460,6 +461,15 @@ position = Vector2(2158, 112)
 
 [node name="collectible18" parent="." instance=ExtResource("9_jcnlr")]
 position = Vector2(151, 49)
+
+[node name="Area2D2" parent="." instance=ExtResource("13_tv7cl")]
+position = Vector2(71, 593)
+
+[node name="collectible19" parent="." instance=ExtResource("9_jcnlr")]
+position = Vector2(1130, 504)
+
+[node name="collectible20" parent="." instance=ExtResource("9_jcnlr")]
+position = Vector2(1331, 601)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="ui/pause/pausePanel/VBoxContainer/resume" to="ui/pause" method="_on_resume_pressed"]

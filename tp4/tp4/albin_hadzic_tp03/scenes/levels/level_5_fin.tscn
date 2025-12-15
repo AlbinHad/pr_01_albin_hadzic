@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dp7ga2516absi"]
+[gd_scene load_steps=19 format=4 uid="uid://dp7ga2516absi"]
 
 [ext_resource type="Texture2D" uid="uid://cvkd36qhckb2s" path="res://assets/images/Brown.png" id="1_h8ejh"]
 [ext_resource type="Texture2D" uid="uid://bk8irmxue2e2s" path="res://assets/images/Terrain (16x16).png" id="2_tufrv"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://bpmfur0eos0bs" path="res://scrypt/area_2d.gd" id="5_j28h7"]
 [ext_resource type="AudioStream" uid="uid://bm0elni505pei" path="res://assets/sons/chill-gaming-beats-323454.mp3" id="6_5vquk"]
 [ext_resource type="Script" uid="uid://cmjpvd8cla8fp" path="res://scenes/levels/game_manager.gd" id="8_1buau"]
+[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="8_h8ejh"]
 [ext_resource type="Texture2D" uid="uid://8upf2sjhnklh" path="res://assets/images/Item 3-1.png.png" id="11_puxc4"]
 [ext_resource type="PackedScene" uid="uid://cuffgeudpsbws" path="res://scenes/objets/collectible.tscn" id="12_2fs5b"]
 [ext_resource type="Script" uid="uid://ceh56v7vux7v2" path="res://scenes/levels/pause.gd" id="12_tufrv"]
@@ -380,6 +381,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.371416, 0.706383, 0.404362, 1)
+theme_override_fonts/font = ExtResource("8_h8ejh")
 theme_override_font_sizes/font_size = 20
 text = "melon d’eau: 0
 "

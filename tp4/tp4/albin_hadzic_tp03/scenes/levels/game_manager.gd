@@ -1,6 +1,7 @@
 extends Node
 
-@onready var points_label: Label = %pointslabels
+@onready var points_label: Label = get_node("/root/Node2D/ui/Panel/pointslabels")
+
 @export var hearts: Array[Node]
 
 var points = 0

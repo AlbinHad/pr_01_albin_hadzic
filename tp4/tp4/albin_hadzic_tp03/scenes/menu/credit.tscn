@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cgusq4ee5qal5"]
 
-[ext_resource type="Script" uid="uid://sh1pyl3k2hsd" path="res://creditl.gd" id="1_jcgkw"]
+[ext_resource type="Script" uid="uid://sh1pyl3k2hsd" path="res://scrypt/creditl.gd" id="1_jcgkw"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

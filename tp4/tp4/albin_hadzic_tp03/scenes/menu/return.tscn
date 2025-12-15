@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ch0fwcekyonvd"]
 
-[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="1_2up7w"]
+[ext_resource type="FontFile" uid="uid://b611fviypipuw" path="res://assets/font/PeaberryBase.ttf" id="1_m7vry"]
 
 [node name="Button" type="Button"]
 anchors_preset = -1
@@ -10,6 +10,6 @@ offset_left = 544.0
 offset_top = 400.0
 offset_right = 887.153
 offset_bottom = 454.027
-theme_override_fonts/font = ExtResource("1_2up7w")
+theme_override_fonts/font = ExtResource("1_m7vry")
 theme_override_font_sizes/font_size = 30
 text = "return to menu"
