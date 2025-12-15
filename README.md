@@ -24,6 +24,8 @@ Jeu développé avec **Godot** et exporté en **HTML5**.
   https://pixelfrog-assets.itch.io/pixel-adventure-1  
 - Pixel Adventure 2 – Pixel Frog  
   https://pixelfrog-assets.itch.io/pixel-adventure-2  
+- Itch.io – Game Assets  
+  https://itch.io/game-asset  
 
 ### Sons
 - Pixabay  
