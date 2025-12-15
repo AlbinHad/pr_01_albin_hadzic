@@ -1,48 +1,39 @@
+# TP_04 — ASTRONOMIC
 
-# 🚀 ASTRONOMIC
+## Description
+**ASTRONOMIC** est un jeu de plateforme 2D qui paraît simple à première vue, mais dont le
+niveau de difficulté demande concentration et des sauts précis.
+Le joueur progresse à travers des niveaux en évitant les obstacles, en éliminant des
+ennemis, en accumulant des points et en récupérant une clé pour accéder au dernier niveau.
 
-## 📖 Description
+## Comment jouer
+- **Flèche gauche / A** : se déplacer à gauche  
+- **Flèche droite / D** : se déplacer à droite  
+- **Flèche haut / W / Espace** : sauter  
+- **ESC** : menu pause  
 
-Jeu réalisé par **Albin Hadzic** dans le cadre du programme **Techniques d’intégration multimédia (TIM)** au **Collège Montmorency**.
-Projet développé avec **Godot** et exporté en **HTML5** dans un contexte académique.
+## Contexte académique
+Projet réalisé par **Albin Hadzic** dans le cadre du programme **Techniques d’intégration
+multimédia (TIM)** au **Collège Montmorency**, dans le cours **Interactivité ludique**.
+Jeu développé avec **Godot** et exporté en **HTML5**.
 
----
+## Crédits
+- Graphismes : Pixel Adventure 1 & 2 – Pixel Frog  
+  https://pixelfrog-assets.itch.io/pixel-adventure-1  
+  https://pixelfrog-assets.itch.io/pixel-adventure-2  
+- Font : Godot Pixel Fonts (Itch.io)  
+  https://itch.io/queue/c/733269/godot-pixel-fonts  
+- Sons : Pixabay, Mixkit  
+- Outils : Godot, Visual Studio Code  
+- Export : HTML5  
+- Tutoriels : https://www.youtube.com/@CocoCode  
+- Plateforme : Itch.io  
 
-## 🎮 Comment jouer
+## Auteur
+**Albin Hadzic**  
+Techniques d’intégration multimédia (TIM)  
+Collège Montmorency
 
-* **Flèche gauche / A** : se déplacer à gauche
-* **Flèche droite / D** : se déplacer à droite
-* **Flèche haut / W / Espace** : sauter
-* **ESC** : menu pause
-
----
-
-##   Crédits
-
-* **Graphismes** : Pixel Adventure 1 & 2 – Pixel Frog
-  [https://pixelfrog-assets.itch.io/pixel-adventure-1](https://pixelfrog-assets.itch.io/pixel-adventure-1)
-  [https://pixelfrog-assets.itch.io/pixel-adventure-2](https://pixelfrog-assets.itch.io/pixel-adventure-2)
-
-* **Font** : Godot Pixel Fonts (Itch.io)
-  [https://itch.io/queue/c/733269/godot-pixel-fonts](https://itch.io/queue/c/733269/godot-pixel-fonts)
-
-* **Sons** : Pixabay, Mixkit
-
-* **Outils** : Godot, Visual Studio Code
-
-* **Export** : HTML5
-
-* **Tutoriels** : [https://www.youtube.com/@CocoCode](https://www.youtube.com/@CocoCode)
-
-* **Plateforme** : Itch.io
-
----
-
-##   Auteur
-
-Projet réalisé par **Albin Hadzic**
-Programme **Techniques d’intégration multimédia (TIM)**
-**Collège Montmorency** 
 
 ---
 
